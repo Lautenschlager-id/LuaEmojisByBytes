@@ -26,7 +26,6 @@ local getHex = function(str)
 	return table.concat(hex, '-')
 end
 
-local file
 for i = 1, #tbl do
 	os.rename("72x72/" .. tbl[i][1] .. ".png", "72x72/" .. getHex(tbl[i][2]) .. ".png")
 end
